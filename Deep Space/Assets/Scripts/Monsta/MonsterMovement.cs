@@ -18,6 +18,10 @@ public class MonsterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        monster.SetDestination(target.transform.position);
+        if(target != null)
+        {
+            monster.SetDestination(target.transform.position);
+        }
+        
     }
 }

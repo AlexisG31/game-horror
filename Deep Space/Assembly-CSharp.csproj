@@ -59,14 +59,23 @@
     <UnityVersion>2022.3.22f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="/Users/mngowman0003/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.0.3/Analyzers/Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="/Users/mngowman0003/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.0.4/Analyzers/Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/KeyCards.cs" />
+    <Compile Include="Assets/Scripts/Monsta/MonsterMath.cs" />
+    <Compile Include="Assets/Scripts/ItemObject.cs" />
+    <Compile Include="Assets/Scripts/InventoryObject.cs" />
+    <Compile Include="Assets/Scripts/Monsta/MonsterMovement.cs" />
+    <Compile Include="Assets/Scripts/consumables.cs" />
     <Compile Include="Assets/Scripts/PlayerCam_Script.cs" />
-    <Compile Include="Assets/Scripts/MonsterMovement.cs" />
-    <Compile Include="Assets/Scripts/Movement_Script.cs" />
+    <Compile Include="Assets/Scripts/PlayerMovementScript1.cs" />
+    <Compile Include="Assets/Scripts/ImportantObject.cs" />
+    <Compile Include="Assets/Scripts/Monsta/MonsterAI.cs" />
+    <Compile Include="Assets/Scripts/SlidingScript.cs" />
+    <Compile Include="Assets/Scripts/Monsta/Custom Editor/MonsterFOVEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1013,12 +1022,12 @@
       <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
       <HintPath>Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
