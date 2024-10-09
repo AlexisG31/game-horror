@@ -22,7 +22,11 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< Updated upstream
 49941
+=======
+49548
+>>>>>>> Stashed changes
 Successfully changed project path to: /Users/agarciaca0019/Documents/GitHub/game-horror/Deep Space
 /Users/agarciaca0019/Documents/GitHub/game-horror/Deep Space
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -56,12 +60,21 @@ Successfully changed project path to: /Users/agarciaca0019/Documents/GitHub/game
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< Updated upstream
 Player connection [4810988992] Host "[IP] 10.241.148.163 [Port] 0 [Flags] 2 [Guid] 1847404497 [EditorId] 1847404497 [Version] 1048832 [Id] OSXEditor(0,LAUSD-Mac-07-33-25.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [4810988992] Host "[IP] 10.241.148.163 [Port] 0 [Flags] 2 [Guid] 1847404497 [EditorId] 1847404497 [Version] 1048832 [Id] OSXEditor(0,LAUSD-Mac-07-33-25.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
 Refreshing native plugins compatible for Editor in 22.67 ms, found 2 plugins.
+=======
+Player connection [4682362304] Host "[IP] 10.241.146.250 [Port] 0 [Flags] 2 [Guid] 1784546771 [EditorId] 1784546771 [Version] 1048832 [Id] OSXEditor(0,LAUSD-Mac-07-33-25.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [4682362304] Host "[IP] 10.241.146.250 [Port] 0 [Flags] 2 [Guid] 1784546771 [EditorId] 1784546771 [Version] 1048832 [Id] OSXEditor(0,LAUSD-Mac-07-33-25.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
+Refreshing native plugins compatible for Editor in 24.17 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.22f1 (887be4894c44)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -76,6 +89,7 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/MonoBleedingEdge/etc'
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56603
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -87,11 +101,25 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.734 seconds
 Domain Reload Profiling: 1669ms
 	BeginReloadAssembly (312ms)
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56855
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.005298 seconds.
+- Loaded All Assemblies, in  0.851 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.625 seconds
+Domain Reload Profiling: 1477ms
+	BeginReloadAssembly (266ms)
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (2ms)
+<<<<<<< Updated upstream
 	RebuildCommonClasses (96ms)
 	RebuildNativeTypeToScriptingClass (23ms)
 	initialDomainReloadingComplete (126ms)
@@ -114,6 +142,30 @@ Domain Reload Profiling: 1669ms
 			BeforeProcessingInitializeOnLoad (5ms)
 			ProcessInitializeOnLoadAttributes (409ms)
 			ProcessInitializeOnLoadMethodAttributes (116ms)
+=======
+	RebuildCommonClasses (101ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (106ms)
+	LoadAllAssembliesAndSetupDomain (354ms)
+		LoadAssemblies (265ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (348ms)
+			TypeCache.Refresh (345ms)
+				TypeCache.ScanAssembly (313ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (626ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (498ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (14ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (357ms)
+			ProcessInitializeOnLoadMethodAttributes (107ms)
+>>>>>>> Stashed changes
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -121,14 +173,20 @@ Domain Reload Profiling: 1669ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
+<<<<<<< Updated upstream
 - Loaded All Assemblies, in  1.172 seconds
 Refreshing native plugins compatible for Editor in 7.65 ms, found 2 plugins.
+=======
+- Loaded All Assemblies, in  0.948 seconds
+Refreshing native plugins compatible for Editor in 5.04 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  1.168 seconds
 Domain Reload Profiling: 2341ms
 	BeginReloadAssembly (245ms)
@@ -214,10 +272,16 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  1.312 seconds
 Domain Reload Profiling: 1978ms
 	BeginReloadAssembly (248ms)
+=======
+- Finished resetting the current domain, in  0.862 seconds
+Domain Reload Profiling: 1810ms
+	BeginReloadAssembly (264ms)
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (11ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 		CreateAndSetChildDomain (92ms)
 	RebuildCommonClasses (57ms)
 	RebuildNativeTypeToScriptingClass (18ms)
@@ -241,10 +305,36 @@ Domain Reload Profiling: 1978ms
 			BeforeProcessingInitializeOnLoad (64ms)
 			ProcessInitializeOnLoadAttributes (466ms)
 			ProcessInitializeOnLoadMethodAttributes (26ms)
+=======
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (60ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (549ms)
+		LoadAssemblies (396ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (269ms)
+			TypeCache.Refresh (241ms)
+				TypeCache.ScanAssembly (219ms)
+			ScanForSourceGeneratedMonoScriptInfo (17ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (862ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (623ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (67ms)
+			ProcessInitializeOnLoadAttributes (511ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+>>>>>>> Stashed changes
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 3.87 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3131 Unused Serialized files (Serialized files now loaded: 0)
@@ -253,6 +343,17 @@ Memory consumption went from 240.5 MB to 240.5 MB.
 Total: 3.232735 ms (FindLiveObjects: 0.221073 ms CreateObjectMapping: 0.165939 ms MarkObjects: 2.805132 ms  DeleteObjects: 0.039276 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+=======
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Refreshing native plugins compatible for Editor in 4.97 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3160 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (138.1 KB). Loaded Objects now: 3623.
+Memory consumption went from 238.5 MB to 238.3 MB.
+Total: 3.686269 ms (FindLiveObjects: 0.426386 ms CreateObjectMapping: 0.325630 ms MarkObjects: 2.797020 ms  DeleteObjects: 0.136129 ms)
+
+>>>>>>> Stashed changes
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -266,6 +367,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+<<<<<<< Updated upstream
 ========================================================================
 Received Import Request.
   Time since last request: 81.258521 seconds.
@@ -474,10 +576,43 @@ Received Import Request.
   path: Assets/Scripts/ImportantObject.cs
   artifactKey: Guid(66a4e49f7aafe4291bc8148ecda0d592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/ImportantObject.cs using Guid(66a4e49f7aafe4291bc8148ecda0d592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b35d0247048667c40ed6821102913f4') in 0.004560 seconds
+=======
+========================================================================
+Received Import Request.
+  Time since last request: 1432.299671 seconds.
+  path: Assets/Scripts/DisplayInventory.cs
+  artifactKey: Guid(424a38f4f79d24491bfbfedf4911526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DisplayInventory.cs using Guid(424a38f4f79d24491bfbfedf4911526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1336f668976dffb9ead0e5f4b032b5e') in 0.001795 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
+  Time since last request: 10.246926 seconds.
+  path: Assets/Scripts/DisplayInventory.cs
+  artifactKey: Guid(424a38f4f79d24491bfbfedf4911526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DisplayInventory.cs using Guid(424a38f4f79d24491bfbfedf4911526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f47df899aec24b6e77d4126a5f4afdf') in 0.000564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1644.469388 seconds.
+  path: Assets/Scripts/DisplayInventory.cs
+  artifactKey: Guid(424a38f4f79d24491bfbfedf4911526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DisplayInventory.cs using Guid(424a38f4f79d24491bfbfedf4911526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91dfdb1a16c499f5fb6e887f78ea1d1c') in 0.000631 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 11.922944 seconds.
+  path: Assets/Scripts/DisplayInventory.cs
+  artifactKey: Guid(424a38f4f79d24491bfbfedf4911526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DisplayInventory.cs using Guid(424a38f4f79d24491bfbfedf4911526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a4f2df1994e94c574188fdb717c298e') in 0.000563 seconds
+>>>>>>> Stashed changes
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 296.349199 seconds.
   path: Assets/Scriptable Objects/Items/Key.asset
   artifactKey: Guid(7ea33268648c44a588b870fc164c8896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -571,26 +706,47 @@ Received Import Request.
   path: Assets/Scripts/Consumables.cs
   artifactKey: Guid(a4fbd982184c14481910c72fcf5b018d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/Consumables.cs using Guid(a4fbd982184c14481910c72fcf5b018d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0761184cfe1a3121e31c1075884808cc') in 0.001792 seconds
+=======
+  Time since last request: 14.247769 seconds.
+  path: Assets/Scripts/DisplayInventory.cs
+  artifactKey: Guid(424a38f4f79d24491bfbfedf4911526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DisplayInventory.cs using Guid(424a38f4f79d24491bfbfedf4911526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '194809f36f90fd6fabee8580bf227ead') in 0.000404 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 159.779062 seconds.
   path: Assets/Scripts/Consumables.cs
   artifactKey: Guid(a4fbd982184c14481910c72fcf5b018d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/Consumables.cs using Guid(a4fbd982184c14481910c72fcf5b018d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15634b71d79e01afd25e60fafdb7e069') in 0.000484 seconds
+=======
+  Time since last request: 24.306545 seconds.
+  path: Assets/Scripts/DisplayInventory.cs
+  artifactKey: Guid(424a38f4f79d24491bfbfedf4911526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DisplayInventory.cs using Guid(424a38f4f79d24491bfbfedf4911526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3996b4d6d2845a3d30cb7882209f2197') in 0.000680 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 43.103539 seconds.
   path: Assets/Scripts/Consumables.cs
   artifactKey: Guid(a4fbd982184c14481910c72fcf5b018d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/Consumables.cs using Guid(a4fbd982184c14481910c72fcf5b018d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8252d9ca30d619efa4978450f460607f') in 0.000438 seconds
+=======
+  Time since last request: 104.736807 seconds.
+  path: Assets/Scripts/DisplayInventory.cs
+  artifactKey: Guid(424a38f4f79d24491bfbfedf4911526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DisplayInventory.cs using Guid(424a38f4f79d24491bfbfedf4911526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b904de1059c438db976fb10fefe7c65') in 0.000404 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 15.015799 seconds.
   path: Assets/Scripts/consumables.cs
   artifactKey: Guid(a4fbd982184c14481910c72fcf5b018d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -1032,5 +1188,11 @@ Received Import Request.
   path: Assets/Scripts/InventoryObject.cs
   artifactKey: Guid(3e3ae6347c5d34f4eaeaa8e626c6fd35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/InventoryObject.cs using Guid(3e3ae6347c5d34f4eaeaa8e626c6fd35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da1d55dd678d46b9dc7633537622d218') in 0.005609 seconds
+=======
+  Time since last request: 6.803196 seconds.
+  path: Assets/Scripts/DisplayInventory.cs
+  artifactKey: Guid(424a38f4f79d24491bfbfedf4911526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DisplayInventory.cs using Guid(424a38f4f79d24491bfbfedf4911526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d3dde58a1a460ecee9bb932592a8f14') in 0.000402 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0

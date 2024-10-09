@@ -22527,8 +22527,13 @@
       "Annotation": "WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.rsp",
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1690276,
       "PayloadLength": 34573,
+=======
+      "PayloadOffset": 1642599,
+      "PayloadLength": 33987,
+>>>>>>> Stashed changes
       "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
       "Inputs": [],
       "Outputs": [
@@ -22540,7 +22545,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1724935,
+=======
+      "PayloadOffset": 1676672,
+>>>>>>> Stashed changes
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -22795,8 +22804,10 @@
         "Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll",
         "Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll",
         "Assets/Scripts/consumables.cs",
+        "Assets/Scripts/DisplayInventory.cs",
         "Assets/Scripts/ImportantObject.cs",
         "Assets/Scripts/InventoryObject.cs",
+        "Assets/Scripts/Item.cs",
         "Assets/Scripts/ItemObject.cs",
         "Assets/Scripts/KeyCards.cs",
         "Assets/Scripts/Monsta/Custom Editor/MonsterFOVEditor.cs",
@@ -22805,6 +22816,7 @@
         "Assets/Scripts/Monsta/MonsterMovement.cs",
         "Assets/Scripts/PlayerCam_Script.cs",
         "Assets/Scripts/PlayerMovementScript1.cs",
+        "Assets/Scripts/PlayerScript.cs",
         "Assets/Scripts/SlidingScript.cs",
         "/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll",
         "/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll",
@@ -23066,8 +23078,13 @@
       "Annotation": "WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1725030,
       "PayloadLength": 10124,
+=======
+      "PayloadOffset": 1676767,
+      "PayloadLength": 9708,
+>>>>>>> Stashed changes
       "PayloadDebugContentSnippet": "Library/Bee/artifacts/mvdfrm/U",
       "Inputs": [],
       "Outputs": [

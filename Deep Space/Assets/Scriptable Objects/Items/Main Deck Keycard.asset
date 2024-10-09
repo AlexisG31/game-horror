@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8ea26d710b042e497dbcd9be927717, type: 3}
   m_Name: Main Deck Keycard
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 560491913934869636, guid: 318313a7b2af84f1dbc7cad1d833e37a, type: 3}
   type: 1
   description: Unlocks the door to the Main Deck

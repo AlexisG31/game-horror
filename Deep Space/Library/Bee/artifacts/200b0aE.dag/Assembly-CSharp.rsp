@@ -361,8 +361,10 @@
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/consumables.cs"
+"Assets/Scripts/DisplayInventory.cs"
 "Assets/Scripts/ImportantObject.cs"
 "Assets/Scripts/InventoryObject.cs"
+"Assets/Scripts/Item.cs"
 "Assets/Scripts/ItemObject.cs"
 "Assets/Scripts/KeyCards.cs"
 "Assets/Scripts/Monsta/Custom Editor/MonsterFOVEditor.cs"
@@ -371,6 +373,7 @@
 "Assets/Scripts/Monsta/MonsterMovement.cs"
 "Assets/Scripts/PlayerCam_Script.cs"
 "Assets/Scripts/PlayerMovementScript1.cs"
+"Assets/Scripts/PlayerScript.cs"
 "Assets/Scripts/SlidingScript.cs"
 -langversion:9.0
 

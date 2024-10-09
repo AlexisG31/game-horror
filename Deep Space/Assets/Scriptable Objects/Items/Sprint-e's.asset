@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4fbd982184c14481910c72fcf5b018d, type: 3}
   m_Name: Sprint-e's
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 8463036863465453239, guid: 54c2338e6af204a478106a40827ed3a9, type: 3}
   type: 2
   description: Increases sprinting speed
