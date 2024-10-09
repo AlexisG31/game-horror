@@ -5,7 +5,7 @@ using TMPro;
 
 public class DisplayInventory : MonoBehaviour
 {
-    public InventoryObject inventory;
+    public InventoryObject Inventory;
 
     public int X_SPACE_BETWEEN_ITEM;
     public int NUMBER_OF_COLUMN;
@@ -24,11 +24,11 @@ public class DisplayInventory : MonoBehaviour
     }
     public void CreateDisplay()
     {
-        for (int i = 0; i < inventory.Container.Count; i++)
+        for (int i = 0; i < Inventory.Container.Count; i++)
         {
-            var obj = Instantiate(inventory.Container[i].Items.prefab, Vector3.zero, Quaternion.identity, transform);
+            var obj = Instantiate(Inventory.Container[i].Item.prefab, Vector3.zero, Quaternion.identity, transform);
             obj.GetComponet<RectTransform>().localPosition = GetPosition(i);
-            obj.GetComponetInChildren<TextMeshProUGUI>().text = inventory.Container[i].amount.ToString("n0");
+            obj.GetComponetInChildren<TextMeshProUGUI>().text = Inventory.Container[i].amount.ToString("n0");
         }
     }
     public Vector3 GetPosition(int i)
