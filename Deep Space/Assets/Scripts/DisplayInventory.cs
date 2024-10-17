@@ -26,9 +26,9 @@ public class DisplayInventory : MonoBehaviour
     {
         for (int i = 0; i < Inventory.Container.Count; i++)
         {
-            var obj = Instantiate(Inventory.Container[i].Item.prefab, Vector3.zero, Quaternion.identity, transform);
-            obj.GetComponet<RectTransform>().localPosition = GetPosition(i);
-            obj.GetComponetInChildren<TextMeshProUGUI>().text = Inventory.Container[i].amount.ToString("n0");
+            var obj = Instantiate(Inventory.Container[i].item.prefab, Vector3.zero, Quaternion.identity, transform);
+            obj.GetComponent<RectTransform>().localPosition = GetPosition(i);
+            obj.GetComponentInChildren<TextMeshProUGUI>().text = Inventory.Container[i].amount.ToString("n0");
         }
     }
     public Vector3 GetPosition(int i)
