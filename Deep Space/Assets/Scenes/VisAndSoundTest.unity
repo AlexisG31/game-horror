@@ -871,14 +871,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mainCam: {fileID: 732097700}
-  playerSpeed: 900
-  _sprintSpeedAdd: 100
-  _playerSpeedAirLose: 150
+  _sprintSpeedAdd: 50
+  _crouchSpeedPenalty: 30
   playerRotationSpeed: 500
   distToGround: 1
   maxHP: 100
   currentHP: 100
-  groundDrag: 0.5
+  groundDrag: 0.8
+  _defaultMoveSpeed: 70
 --- !u!1 &1522934994
 GameObject:
   m_ObjectHideFlags: 0
