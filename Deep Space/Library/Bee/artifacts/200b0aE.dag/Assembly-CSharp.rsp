@@ -360,6 +360,7 @@
 "Assets/Scripts/ImportantObject.cs"
 "Assets/Scripts/InventoryObject.cs"
 "Assets/Scripts/Item.cs"
+"Assets/Scripts/ItemDataBaseObject.cs"
 "Assets/Scripts/ItemObject.cs"
 "Assets/Scripts/KeyCards.cs"
 "Assets/Scripts/Monsta/Custom Editor/MonsterFOVEditor.cs"
