@@ -16,6 +16,17 @@ public class PlayerScript : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Inventory.Save();
+        }
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            Inventory.Load();
+        }
+    }
     private void OnApplicationQuit()
     {
         Inventory.Container.Clear();
