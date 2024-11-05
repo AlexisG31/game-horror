@@ -16,10 +16,9 @@ public class MonsterFOVEditor : Editor
         Handles.DrawLine(Monster.transform.position, Monster.transform.position + viewAngleA * Monster.maxViewDistance);
         Handles.DrawLine(Monster.transform.position, Monster.transform.position + viewAngleB * Monster.maxViewDistance);
         Handles.color = Color.yellow;
-        Handles.DrawWireArc(Monster.transform.position, Vector3.up, Vector3.forward, 360, Monster.peripheralVisionDistance);
-        Vector3 viewAngleCloseA = Monster.dirFromAngle (-Monster.peripheralVisionAngle / 2, false);
-        Vector3 viewAngleCloseB = Monster.dirFromAngle (Monster.peripheralVisionAngle / 2, false);
-        Handles.DrawLine(Monster.transform.position, Monster.transform.position + viewAngleCloseA * Monster.peripheralVisionDistance);
-        Handles.DrawLine(Monster.transform.position, Monster.transform.position + viewAngleCloseB * Monster.peripheralVisionDistance);
+        foreach (Transform visableTarget in Monster.visableTargets)
+        {
+            Handles.DrawLine(Monster.transform.position, visableTarget.position);
+        }
     }
 }

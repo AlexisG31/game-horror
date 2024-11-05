@@ -66,6 +66,8 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/PlayerScript.cs" />
     <Compile Include="Assets/Scripts/KeyCards.cs" />
+    <Compile Include="Assets/Scripts/Sound/CustardEditor/SoundVisualization.cs" />
+    <Compile Include="Assets/Scripts/ItemDataBaseObject.cs" />
     <Compile Include="Assets/Scripts/Monsta/MonsterMath.cs" />
     <Compile Include="Assets/Scripts/ItemObject.cs" />
     <Compile Include="Assets/Scripts/XPerimental/XPlayerMovement.cs" />
@@ -74,6 +76,7 @@
     <Compile Include="Assets/Scripts/consumables.cs" />
     <Compile Include="Assets/Scripts/PlayerCam_Script.cs" />
     <Compile Include="Assets/Scripts/PlayerMovementScript1.cs" />
+    <Compile Include="Assets/Scripts/Sound/SourceOfAudio.cs" />
     <Compile Include="Assets/Scripts/ImportantObject.cs" />
     <Compile Include="Assets/Scripts/Monsta/MonsterAI.cs" />
     <Compile Include="Assets/Scripts/SlidingScript.cs" />
