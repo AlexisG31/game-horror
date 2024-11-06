@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571337, b: 0.3069219, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -414,12 +414,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424a38f4f79d24491bfbfedf4911526b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Inventory: {fileID: 11400000, guid: 58436400c9e5e4b56bb91d2567c43ddc, type: 2}
-  X_SPACE_BETWEEN_ITEM: 153
-  NUMBER_OF_COLUMN: 3
-  Y_SPACE_BETWEEN_ITEMS: 35
-  X_START: 150
-  Y_START: 520
 --- !u!114 &814338318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,8 +467,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 844358947}
-  - component: {fileID: 844358945}
   - component: {fileID: 844358948}
+  - component: {fileID: 844358949}
   m_Layer: 0
   m_Name: Item
   m_TagString: Untagged
@@ -482,19 +476,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &844358945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844358944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc9324b6228e74277a25222708444b9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 513ff30f44d17415280de29f2d8c4951, type: 2}
 --- !u!4 &844358947
 Transform:
   m_ObjectHideFlags: 0
@@ -532,6 +513,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &844358949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844358944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e48048c4c32b84ca4a98cf4a5404def0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 513ff30f44d17415280de29f2d8c4951, type: 2}
 --- !u!1 &1238280956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,7 +1496,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fac044a2502b489a8c932a968926911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Inventory: {fileID: 11400000, guid: 58436400c9e5e4b56bb91d2567c43ddc, type: 2}
 --- !u!1 &8901891171548830195
 GameObject:
   m_ObjectHideFlags: 0

@@ -389,6 +389,7 @@
 "Assets/Scripts/Sound/CustardEditor/SoundVisualization.cs"
 "Assets/Scripts/Sound/SourceOfAudio.cs"
 "Assets/Scripts/XPerimental/XPlayerMovement.cs"
+"Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 
 /deterministic
