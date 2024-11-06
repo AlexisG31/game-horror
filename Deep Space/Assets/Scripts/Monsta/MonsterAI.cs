@@ -30,6 +30,10 @@ public class MonsterAI : MonoBehaviour
     void Start(){
         StartCoroutine("FindTargetsWithDelay", .2f);
     }
+    void findTarget()
+    {
+        
+    }
     IEnumerator FindTargetsWithDelay(float delay)
     {
         while(true)
