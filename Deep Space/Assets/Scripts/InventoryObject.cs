@@ -56,7 +56,7 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
 
     public void RemoveItem(item _item)
     {
-        for (int i = 0; < Container.Item.Length; i ++)
+        for (int i = 0; i  < Container.Item.Length; i ++)
         {
             if(Container.Item[i].item == _item)
             {

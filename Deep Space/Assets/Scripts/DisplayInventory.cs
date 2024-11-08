@@ -84,7 +84,7 @@ public class DisplayInventory : MonoBehaviour
         var mouseObject = new GameObject();
         var rt = mouseObject.AddComponent<RectTransfrom>();
         rt.sizeDelta = new Vector2(50, 50);
-        mouseObject.transform.SetParent(transform.parent)
+        mouseObject.transform.SetParent(transform.parent);
         if(itemsDisplayed[obj].ID >= 0)
         {
             var img = mouseObject.AddComponent<Image>();
