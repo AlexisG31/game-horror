@@ -64,25 +64,36 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/PlayerScript.cs" />
-    <Compile Include="Assets/Scripts/KeyCards.cs" />
+    <Compile Include="Assets/Scripts/Inventory/ItemObject.cs" />
+    <Compile Include="Assets/Scripts/Inventory/InventorySlot.cs" />
+    <Compile Include="Assets/Scripts/Inventory/ItemBuff.cs" />
     <Compile Include="Assets/Scripts/Sound/CustardEditor/SoundVisualization.cs" />
+    <Compile Include="Assets/Scripts/Inventory/InventoryObject.cs" />
+    <Compile Include="Assets/Scripts/Inventory/Inventory.cs" />
+    <Compile Include="Assets/Scripts/Inventory/Item.cs" />
+    <Compile Include="Assets/Scripts/Inventory/consumables.cs" />
     <Compile Include="Assets/Scripts/ItemDataBaseObject.cs" />
     <Compile Include="Assets/Scripts/Monsta/MonsterMath.cs" />
-    <Compile Include="Assets/Scripts/ItemObject.cs" />
     <Compile Include="Assets/Scripts/XPerimental/XPlayerMovement.cs" />
-    <Compile Include="Assets/Scripts/InventoryObject.cs" />
+    <Compile Include="Assets/Scripts/Inventory/KeyCards.cs" />
     <Compile Include="Assets/Scripts/Monsta/MonsterMovement.cs" />
-    <Compile Include="Assets/Scripts/consumables.cs" />
+    <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
+    <Compile Include="Assets/Scripts/Inventory/ItemType.cs" />
+    <Compile Include="Assets/Scripts/Inventory/ItemDatabaseObject.cs" />
     <Compile Include="Assets/Scripts/PlayerCam_Script.cs" />
     <Compile Include="Assets/Scripts/PlayerMovementScript1.cs" />
     <Compile Include="Assets/Scripts/Sound/SourceOfAudio.cs" />
-    <Compile Include="Assets/Scripts/ImportantObject.cs" />
+    <Compile Include="Assets/Scripts/Inventory/ImportantObject.cs" />
+    <Compile Include="Assets/Scripts/Inventory/DisplayInventory.cs" />
+    <Compile Include="Assets/Scripts/Inventory/Attributes.cs" />
     <Compile Include="Assets/Scripts/Monsta/MonsterAI.cs" />
+    <Compile Include="Assets/Scripts/Inventory/MouseData.cs" />
     <Compile Include="Assets/Scripts/SlidingScript.cs" />
-    <Compile Include="Assets/Scripts/DisplayInventory.cs" />
     <Compile Include="Assets/Scripts/Monsta/Custom Editor/MonsterFOVEditor.cs" />
-    <Compile Include="Assets/Scripts/Item.cs" />
+    <Compile Include="Assets/Scripts/Inventory/GroundItem.cs" />
+    <Compile Include="Assets/Scripts/InterfaceType.cs" />
+    <Compile Include="Assets/Scripts/Inventory/IModifiers.cs" />
+    <Compile Include="Assets/Scripts/Inventory/UserInterface.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

@@ -9,9 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66a4e49f7aafe4291bc8148ecda0d592, type: 3}
+  m_Script: {fileID: 11500000, guid: 7254976a21cfc47f0b518e38270f3d6e, type: 3}
   m_Name: Rusted Key
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1436369240336216712, guid: 6ced6884def4347e8a2313baa87011ea, type: 3}
-  type: 0
-  description: A rusted key that seems to open something
+  uiDisplay: {fileID: 0}
+  characterDisplay: {fileID: 1436369240336216712, guid: 6ced6884def4347e8a2313baa87011ea, type: 3}
+  stackable: 0
+  type: 2
+  description: 
+  data:
+    Name: RustedKey
+    Id: 2
+    buffs: []
+  boneNames: []

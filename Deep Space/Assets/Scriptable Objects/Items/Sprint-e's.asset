@@ -9,9 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4fbd982184c14481910c72fcf5b018d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2212f911c839b4b1985045f9db0a2d6f, type: 3}
   m_Name: Sprint-e's
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8463036863465453239, guid: 54c2338e6af204a478106a40827ed3a9, type: 3}
-  type: 2
-  description: Increases sprinting speed
+  uiDisplay: {fileID: 0}
+  characterDisplay: {fileID: 8463036863465453239, guid: 54c2338e6af204a478106a40827ed3a9, type: 3}
+  stackable: 1
+  type: 3
+  description: 
+  data:
+    Name: Sprint-e's
+    Id: 3
+    buffs: []
+  boneNames: []
