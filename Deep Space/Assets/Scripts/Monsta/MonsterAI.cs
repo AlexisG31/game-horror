@@ -30,9 +30,30 @@ public class MonsterAI : MonoBehaviour
     void Start(){
         StartCoroutine("FindTargetsWithDelay", .2f);
     }
-    void findTarget()
+    Transform findTarget()
     {
-        
+        Sound soundToFollow;
+        if(visableTargets.Count > 0)
+        {
+            return visableTargets[0];
+        }
+        else if(heardTargets.Count > 0)
+        {
+            soundToFollow = heardTargets[0];
+            foreach (Sound sound in heardTargets)
+            {
+                if(sound.priority > soundToFollow.priority)
+                {
+                    soundToFollow = sound;
+                }
+                else if(sound.priority == soundToFollow.priority && sound.volume > soundToFollow.volume)
+                {
+                    soundToFollow = sound;
+                }
+            }
+            return soundToFollow.gameObject.transform;
+        }
+        return null;
     }
     IEnumerator FindTargetsWithDelay(float delay)
     {
@@ -82,7 +103,6 @@ public class MonsterAI : MonoBehaviour
             Debug.LogWarning(heardTargets[0].position + "at volume " + heardTargets[0].volume + " though " + hiter.Length);
         }
     }
-
     // Update is called once per frame
     void Update()
     {
