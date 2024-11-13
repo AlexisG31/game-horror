@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Sound
 {
@@ -19,6 +20,8 @@ public class Sound
 }
 public class MonsterAI : MonoBehaviour
 {
+    [SerializeField]
+    NavMeshAgent monster;
     public float maxViewDistance;
     public float viewAngle;
     public float maxHearingDistance;
@@ -30,7 +33,7 @@ public class MonsterAI : MonoBehaviour
     void Start(){
         StartCoroutine("FindTargetsWithDelay", .2f);
     }
-    Transform findTarget()
+    Transform setTarget()
     {
         Sound soundToFollow;
         if(visableTargets.Count > 0)
@@ -88,8 +91,7 @@ public class MonsterAI : MonoBehaviour
     /// <param name="position">Vector3 of the sound origin</param>
     /// <param name="volume">the volume of the sound</param>
     /// <param name="priority">the priority of the sound</param>
-    /// <param name="immaKillMyself">do not change this it's always true</param>
-    public void IHeardThat(Vector3 position, GameObject gameObject, float volume, int priority, bool immaKillMyself = true)
+    public void IHeardThat(Vector3 position, GameObject gameObject, float volume, int priority)
     {
         Vector3 dirToTarget = (position - transform.position).normalized;
         float distToTarget = Vector3.Distance(transform.position, position);
@@ -107,6 +109,11 @@ public class MonsterAI : MonoBehaviour
     void Update()
     {
         heardTargets.Clear();
+        Transform goTo = setTarget();
+        if(goTo != null)
+        {
+            monster.SetDestination(goTo.position);
+        }
     }
     /// <summary>
     /// Returns Vector3 direction of given angle

@@ -1,15 +1,18 @@
-﻿<Properties StartupConfiguration="{C6FC0CE4-6C49-A9BA-7A35-4C3C81BF0F34}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Movement_Script.cs">
+﻿<Properties>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Monsta/MonsterAI.cs">
     <Files>
-      <File FileName="Assets/Scripts/Movement_Script.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Monsta/MonsterAI.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Deep Space" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Movement_Script.cs" selected="True" />
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="Monsta" expanded="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -20,8 +23,7 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="12707a2b-7deb-444e-a705-d4fff1f0eba1" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
