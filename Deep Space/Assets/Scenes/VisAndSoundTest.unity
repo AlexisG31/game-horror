@@ -1012,9 +1012,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3312b441bceb84b1785f2c3090b32498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 2
-  volume: 60
-  priority: 1
 --- !u!4 &1604782771
 Transform:
   m_ObjectHideFlags: 0
@@ -1358,7 +1355,6 @@ GameObject:
   - component: {fileID: 2028118343}
   - component: {fileID: 2028118342}
   - component: {fileID: 2028118341}
-  - component: {fileID: 2028118346}
   m_Layer: 8
   m_Name: Monster Inc
   m_TagString: Untagged
@@ -1475,28 +1471,6 @@ Transform:
   - {fileID: 1820517127}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2028118346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028118339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5af4f126a26954f51afd4b331f490732, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxViewDistance: 45
-  viewAngle: 100
-  maxHearingDistance: 0
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 64
-  obstacleMask:
-    serializedVersion: 2
-    m_Bits: 128
-  visableTargets: []
 --- !u!1 &2056116412
 GameObject:
   m_ObjectHideFlags: 0

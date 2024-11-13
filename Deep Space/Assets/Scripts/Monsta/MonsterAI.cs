@@ -1,23 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Sound
-{
-    public Vector3 position;
-    public GameObject gameObject;
-    public float volume;
-    public int priority;
-    public Sound(Vector3 origin, GameObject gameObj, float soundVolume, int soundPriority)
-    {
-        position = origin;
-        volume = soundVolume;
-        priority = soundPriority;
-        gameObject = gameObj;
-    }
-}
 public class MonsterAI : MonoBehaviour
 {
     [SerializeField]
@@ -25,11 +12,14 @@ public class MonsterAI : MonoBehaviour
     public float maxViewDistance;
     public float viewAngle;
     public float maxHearingDistance;
+    private bool randomDestination = false;
     public LayerMask targetMask;
     public LayerMask obstacleMask;
     [HideInInspector]
     public List<Transform> visableTargets = new List<Transform>();
     public List<Sound> heardTargets = new List<Sound>();
+    public GameObject[] patrolDestination = new GameObject[20];
+
     void Start(){
         StartCoroutine("FindTargetsWithDelay", .2f);
     }
@@ -38,6 +28,7 @@ public class MonsterAI : MonoBehaviour
         Sound soundToFollow;
         if(visableTargets.Count > 0)
         {
+            randomDestination = false;
             return visableTargets[0];
         }
         else if(heardTargets.Count > 0)
@@ -54,7 +45,17 @@ public class MonsterAI : MonoBehaviour
                     soundToFollow = sound;
                 }
             }
+            randomDestination = false;
             return soundToFollow.gameObject.transform;
+        }
+        else
+        {
+            if(randomDestination == false)
+            {
+                int randomPoint = RandomNumberGenerator.GetInt32(0,20);
+                randomDestination = true;
+                return patrolDestination[randomPoint].transform;
+            }
         }
         return null;
     }
