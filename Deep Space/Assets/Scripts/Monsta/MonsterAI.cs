@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -18,10 +17,20 @@ public class MonsterAI : MonoBehaviour
     [HideInInspector]
     public List<Transform> visableTargets = new List<Transform>();
     public List<Sound> heardTargets = new List<Sound>();
-    public GameObject[] patrolDestination = new GameObject[20];
+    public List<GameObject> patrolDestination = new List<GameObject>();
 
-    void Start(){
-        StartCoroutine("FindTargetsWithDelay", .2f);
+    void Start()
+    {
+        StartCoroutine("EssentialOperationsWithDelay", .2f);
+    }
+    void Update()
+    {
+        Transform goTo = setTarget();
+        if(goTo != null)
+        {
+            monster.SetDestination(goTo.position);
+        }
+        heardTargets.Clear();
     }
     Transform setTarget()
     {
@@ -52,22 +61,22 @@ public class MonsterAI : MonoBehaviour
         {
             if(randomDestination == false)
             {
-                int randomPoint = RandomNumberGenerator.GetInt32(0,20);
+                int randomPoint = UnityEngine.Random.Range(0,patrolDestination.Count);
                 randomDestination = true;
                 return patrolDestination[randomPoint].transform;
             }
         }
         return null;
     }
-    IEnumerator FindTargetsWithDelay(float delay)
+    IEnumerator EssentialOperationsWithDelay(float delay)
     {
         while(true)
         {
             yield return new WaitForSeconds(delay);
-            FindTargets();
+            SightCheck();
         }
     }
-    void FindTargets()
+    void SightCheck()
     {
         //------Sight------
         visableTargets.Clear();
@@ -107,15 +116,7 @@ public class MonsterAI : MonoBehaviour
         }
     }
     // Update is called once per frame
-    void Update()
-    {
-        heardTargets.Clear();
-        Transform goTo = setTarget();
-        if(goTo != null)
-        {
-            monster.SetDestination(goTo.position);
-        }
-    }
+    
     /// <summary>
     /// Returns Vector3 direction of given angle
     /// </summary>

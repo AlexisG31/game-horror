@@ -73,11 +73,11 @@
     <Compile Include="Assets/Scripts/Inventory/Item.cs" />
     <Compile Include="Assets/Scripts/Inventory/consumables.cs" />
     <Compile Include="Assets/Scripts/ItemDataBaseObject.cs" />
+    <Compile Include="Assets/Scripts/Sound/SoundManager.cs" />
     <Compile Include="Assets/Scripts/Monsta/MonsterMath.cs" />
     <Compile Include="Assets/Scripts/XPerimental/XPlayerMovement.cs" />
     <Compile Include="Assets/Scripts/Inventory/KeyCards.cs" />
     <Compile Include="Assets/Scripts/Monsta/MonsterMovement.cs" />
-    <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/Scripts/Inventory/ItemType.cs" />
     <Compile Include="Assets/Scripts/Inventory/ItemDatabaseObject.cs" />
     <Compile Include="Assets/Scripts/PlayerCam_Script.cs" />

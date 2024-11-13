@@ -22,7 +22,7 @@ public class SourceOfAudio : MonoBehaviour
         timeToDestroy = Time.time + duration;
         monsterMask = (1 << 8);
         maxDist = Math.Clamp((float)Math.Pow(2,volume/6), 0, float.MaxValue) * 0.1f;
-        StartCoroutine("Darion", .5f);
+        //StartCoroutine("Darion", .5f);
     }
 
     // Update is called once per frame
