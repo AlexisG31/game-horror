@@ -11,17 +11,34 @@ public class MonsterAI : MonoBehaviour
     public float maxViewDistance;
     public float viewAngle;
     public float maxHearingDistance;
-    private bool randomDestination = false;
+    private bool goingToRandomDestination = false;
+    private int randomDestination;
     public LayerMask targetMask;
     public LayerMask obstacleMask;
+    private LayerMask destMask;
     [HideInInspector]
     public List<Transform> visableTargets = new List<Transform>();
     public List<Sound> heardTargets = new List<Sound>();
+    private Sound currentTargetSound;
     public List<GameObject> patrolDestination = new List<GameObject>();
+    
 
     void Start()
     {
         StartCoroutine("EssentialOperationsWithDelay", .2f);
+        GameObject timer = GameObject.FindWithTag("soundMGR");
+        SoundManager soundManager = timer.GetComponent<SoundManager>();
+        soundManager.OnSoundLaunchTime += SoundManager_OnSoundLaunchTime;
+        destMask = (1 << 31);
+    }
+    void SoundManager_OnSoundLaunchTime(object sender, EventArgs e)
+    {
+        heardTargets.Clear();
+        Transform goTo = setTarget();
+        if(goTo != null)
+        {
+            monster.SetDestination(goTo.position);
+        }
     }
     void Update()
     {
@@ -30,42 +47,79 @@ public class MonsterAI : MonoBehaviour
         {
             monster.SetDestination(goTo.position);
         }
-        heardTargets.Clear();
     }
     Transform setTarget()
     {
         Sound soundToFollow;
         if(visableTargets.Count > 0)
         {
-            randomDestination = false;
-            return visableTargets[0];
+            goingToRandomDestination = false;
+            currentTargetSound = null;
+            Debug.Log("target : sight");
+            return visableTargets[0];     
         }
-        else if(heardTargets.Count > 0)
+        else if(heardTargets.Count != 0)
         {
+            Debug.Log("target : new sound");
             soundToFollow = heardTargets[0];
+            goingToRandomDestination = false;
             foreach (Sound sound in heardTargets)
             {
-                if(sound.priority > soundToFollow.priority)
+                if(sound != null)
                 {
-                    soundToFollow = sound;
-                }
-                else if(sound.priority == soundToFollow.priority && sound.volume > soundToFollow.volume)
-                {
-                    soundToFollow = sound;
+                    if(sound.priority < soundToFollow.priority)
+                    {
+                        soundToFollow = sound;
+                    }
+                    else if(sound.priority == soundToFollow.priority && sound.volume > soundToFollow.volume)
+                    {
+                        soundToFollow = sound;
+                    }
                 }
             }
-            randomDestination = false;
-            return soundToFollow.gameObject.transform;
+            if(currentTargetSound != null && soundToFollow != null)
+            {
+                if(currentTargetSound.priority < soundToFollow.priority)
+                {
+                    Debug.Log(currentTargetSound.priority + " vs " + soundToFollow.priority);
+                    return currentTargetSound.gameObject.transform;
+                }
+                else if(currentTargetSound.priority == soundToFollow.priority && currentTargetSound.volume >= soundToFollow.volume)
+                {
+                    Debug.Log(currentTargetSound.priority + " vs " + soundToFollow.priority);
+                    return currentTargetSound.gameObject.transform;
+                }
+                else
+                {
+                    currentTargetSound = soundToFollow;
+                    return soundToFollow.gameObject.transform;
+                }
+            }
+        }
+        else if(currentTargetSound != null)
+        {
+            Debug.Log("target : old sound");
+            return currentTargetSound.gameObject.transform;
         }
         else
         {
-            if(randomDestination == false)
+            Debug.Log("target : patrol");
+            Collider[] sickCollider = Physics.OverlapSphere(transform.position, 5f, destMask);
+            if(goingToRandomDestination && sickCollider.Length != 0 && sickCollider[0] == patrolDestination[randomDestination].GetComponent<Collider>())
+            {
+                goingToRandomDestination = false;
+                Debug.LogWarning("SickCollider detected opinion rejected");
+            }
+            if(!goingToRandomDestination)
             {
                 int randomPoint = UnityEngine.Random.Range(0,patrolDestination.Count);
-                randomDestination = true;
+                goingToRandomDestination = true;
+                randomDestination = randomPoint;
+                currentTargetSound = null;
                 return patrolDestination[randomPoint].transform;
             }
         }
+        Debug.Log("target : failure to find new target");
         return null;
     }
     IEnumerator EssentialOperationsWithDelay(float delay)
@@ -112,7 +166,7 @@ public class MonsterAI : MonoBehaviour
         if(finalVolume > 0)
         {
             heardTargets.Add(new Sound(position, gameObject, finalVolume, priority));
-            Debug.LogWarning(heardTargets[0].position + "at volume " + heardTargets[0].volume + " though " + hiter.Length);
+            Debug.LogWarning(heardTargets[0].position + "at volume " + heardTargets[0].volume + " though " + hiter.Length + " with priority " + heardTargets[0].priority);
         }
     }
     // Update is called once per frame

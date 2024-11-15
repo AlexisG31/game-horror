@@ -28,6 +28,6 @@ public class SoundManager : MonoBehaviour
     }
     void mySSN()
     {
-        OnSoundLaunchTime(this, EventArgs.Empty);
+        OnSoundLaunchTime?.Invoke(this, EventArgs.Empty);
     }
 }

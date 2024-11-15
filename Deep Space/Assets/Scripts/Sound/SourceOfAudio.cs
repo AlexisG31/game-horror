@@ -22,13 +22,24 @@ public class SourceOfAudio : MonoBehaviour
         timeToDestroy = Time.time + duration;
         monsterMask = (1 << 8);
         maxDist = Math.Clamp((float)Math.Pow(2,volume/6), 0, float.MaxValue) * 0.1f;
+        GameObject manager = GameObject.FindWithTag("soundMGR");
+        SoundManager soundManager = manager.GetComponent<SoundManager>();
+        soundManager.OnSoundLaunchTime += SoundManager_OnSoundLaunchTime;
         //StartCoroutine("Darion", .5f);
     }
-
-    // Update is called once per frame
-    void Update()
+    void SoundManager_OnSoundLaunchTime(object sender, EventArgs e)
     {
-        
+        StartCoroutine("DelayedDarion");
+        if(Time.time >= timeToDestroy)
+        {
+            Debug.LogError("Destroyed sound");
+            Destroy(this);
+        }
+    }
+    IEnumerator DelayedDarion()
+    {
+        yield return 0;
+        DarionIsRacist();
     }
     IEnumerator Darion(float delay)
     {
