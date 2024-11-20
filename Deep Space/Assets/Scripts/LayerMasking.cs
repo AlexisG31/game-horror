@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class LayerMasking : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject Door;
+    [SerializeField] 
+    private GameObject Keycard;
 
-    // Update is called once per frame
-    void Update()
+
+    public LayerMask collisionLayerMask;
+
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        if(collision.gameObject.layer == 9)
+        {  
+            Destroy(gameObject);
+        }
+        //if(Door = GameObject.Find("Door"))
+        //{
+
+        //}
     }
 }
