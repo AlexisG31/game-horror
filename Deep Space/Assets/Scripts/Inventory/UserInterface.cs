@@ -9,7 +9,7 @@ using System.Linq;
 using System;
 
 [RequireComponent(typeof(EventTrigger))]
-public abstract class UserInterface : MonoBehaviour
+public class UserInterface : MonoBehaviour
 {
     public InventoryObject inventory;
     private InventoryObject _previousInventory;
@@ -27,7 +27,7 @@ public abstract class UserInterface : MonoBehaviour
         AddEvent(gameObject, EventTriggerType.PointerExit, delegate { OnExitInterface(gameObject); });
     }
 
-    public abstract void CreateSlots();
+    public void CreateSlots();
 
     public void UpdateInventoryLinks()
     {

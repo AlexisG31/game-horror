@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LayerMasking : MonoBehaviour
 {
+    public float speed = 3;
     public GameObject Door;
     [SerializeField] 
     private GameObject Keycard;
@@ -17,9 +18,14 @@ public class LayerMasking : MonoBehaviour
         {  
             Destroy(gameObject);
         }
-        //if(Door = GameObject.Find("Door"))
-        //{
-
-        //}
+        if(Door = GameObject.Find("Door"))
+        {
+            float timeElapsed = 0;
+            transform.Translate(Vector3.up * speed * Time.deltaTime);
+            if(timeElapsed > 5)
+            {
+                transform.Translate(Vector3.up * stop * Time.deltaTime);
+            }
+        }
     }
 }

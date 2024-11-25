@@ -357,6 +357,7 @@
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/InterfaceType.cs"
 "Assets/Scripts/Inventory/Attributes.cs"
+"Assets/Scripts/Inventory/Basic.cs"
 "Assets/Scripts/Inventory/consumables.cs"
 "Assets/Scripts/Inventory/DisplayInventory.cs"
 "Assets/Scripts/Inventory/GroundItem.cs"
