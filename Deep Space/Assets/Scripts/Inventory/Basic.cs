@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(fileName = "New Default Object", menuName = "Inventory System/Items/Default")]
 
-public class Basic : MonoBehaviour
+public class Basic : ScriptableObject
 {
     // Start is called before the first frame update
     void Start()
